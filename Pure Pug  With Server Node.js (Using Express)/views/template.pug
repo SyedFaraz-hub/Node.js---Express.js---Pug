@@ -1,0 +1,24 @@
+//- Pure pug without template inhertance
+//- // Only used in contact.pug using template.pug
+
+doctype html
+html
+  head
+    title Gaming for Life
+    block scripts
+    block style   
+  body
+    block content
+        div 
+            nav#navbar 
+                ul
+                    li #[a(href='/') Home ] 
+                    li #[a(href='/') About us] 
+                    li #[a(href='/') Servies] 
+                    li #[a(href='/') Contact us]
+    
+    block contact
+    block footer
+       div#container3
+        Sec-footer#footerSection
+            h3 Copyright © 2021 fsGaming.com.pk All Rights Reserved 

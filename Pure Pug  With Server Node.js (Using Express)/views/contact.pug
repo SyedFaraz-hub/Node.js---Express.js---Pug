@@ -1,0 +1,27 @@
+//- Pure pug without template inhertance
+//- // Only used in contact.pug using template.pug
+
+extends template.pug
+
+block scripts
+    script(src='/script.js')
+block style 
+    style
+      include style.css
+      include contact.css
+block contact
+    div#contactsection
+        div#contactForm
+            h1 Contact Us 
+            form(action="/contact" method="post")
+            p Enter Your Name
+            input(type="text" name="name" )
+            p Enter Your Age
+            input(type="number" name="age" )
+            p Enter Your Gender
+            input(type="text" name="gender" )
+            p Enter Your phone
+            input(type="number" name="phone" )
+            p Enter Your Address
+            textarea(name="address", cols="30", rows="5")
+            button Submit
